@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Services", href: "#services" },
-  { label: "Contact", href: "mailto:ryan.pulsesent@gmail.com" },
+  { label: "Contact", href: "https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" },
 ];
 
 const Navbar = () => {
