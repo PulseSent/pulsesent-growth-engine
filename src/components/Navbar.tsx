@@ -42,7 +42,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" size="sm" asChild className="border-foreground/20 text-foreground hover:bg-foreground/5">
-            <a href="mailto:ryan.pulsesent@gmail.com">Book a Free Call</a>
+            <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer">Book a Free Call</a>
           </Button>
         </div>
 
