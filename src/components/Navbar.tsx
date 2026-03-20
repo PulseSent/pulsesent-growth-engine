@@ -61,7 +61,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
-            <a href="#contact" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
+            <a href="mailto:ryan.pulsesent@gmail.com" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
           </Button>
         </motion.div>
       )}

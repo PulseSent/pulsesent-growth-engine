@@ -71,7 +71,7 @@ const TrustSection = () => {
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">What Our Clients Say</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}
