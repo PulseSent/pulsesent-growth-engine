@@ -59,7 +59,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
-            <a href="mailto:ryan.pulsesent@gmail.com" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
+            <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
           </Button>
         </motion.div>
       )}
