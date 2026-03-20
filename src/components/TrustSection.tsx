@@ -36,30 +36,22 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
     let frame: number;
     const duration = 2000;
     const start = performance.now();
-
     const animate = (now: number) => {
       const progress = Math.min((now - start) / duration, 1);
       setCount(Math.floor(progress * target));
       if (progress < 1) frame = requestAnimationFrame(animate);
     };
-
     frame = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(frame);
   }, [isInView, target]);
 
-  return (
-    <span ref={ref}>
-      {count}
-      {suffix}
-    </span>
-  );
+  return <span ref={ref}>{count}{suffix}</span>;
 }
 
 const TrustSection = () => {
   return (
     <section className="py-24 relative">
-      <div className="container px-4">
-        {/* Testimonials */}
+      <div className="max-w-5xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +93,6 @@ const TrustSection = () => {
           ))}
         </div>
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

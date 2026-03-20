@@ -2,30 +2,15 @@ import { motion } from "framer-motion";
 import { Headphones, Wrench, TrendingUp } from "lucide-react";
 
 const steps = [
-  {
-    icon: Headphones,
-    title: "We Listen",
-    desc: "Free discovery call to understand your business and goals.",
-    num: "01",
-  },
-  {
-    icon: Wrench,
-    title: "We Build",
-    desc: "Custom AI systems designed specifically for your workflow.",
-    num: "02",
-  },
-  {
-    icon: TrendingUp,
-    title: "You Grow",
-    desc: "Launch, monitor, and scale — we handle the tech, you handle the results.",
-    num: "03",
-  },
+  { icon: Headphones, title: "We Listen", desc: "Free discovery call to understand your business and goals.", num: "01" },
+  { icon: Wrench, title: "We Build", desc: "Custom AI systems designed specifically for your workflow.", num: "02" },
+  { icon: TrendingUp, title: "You Grow", desc: "Launch, monitor, and scale — we handle the tech, you handle the results.", num: "03" },
 ];
 
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="py-24 relative">
-      <div className="container px-4">
+      <div className="max-w-5xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,9 +24,7 @@ const HowItWorksSection = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 relative">
-          {/* Connector line */}
           <div className="hidden md:block absolute top-16 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-
           {steps.map((step, i) => (
             <motion.div
               key={step.num}
