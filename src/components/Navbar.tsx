@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Who It's For", href: "#who-its-for" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "mailto:ryan.pulsesent@gmail.com" },
 ];
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" size="sm" asChild className="border-foreground/20 text-foreground hover:bg-foreground/5">
-            <a href="#contact">Book a Free Call</a>
+            <a href="mailto:ryan.pulsesent@gmail.com">Book a Free Call</a>
           </Button>
         </div>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
-            <a href="#contact" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
+            <a href="mailto:ryan.pulsesent@gmail.com" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
           </Button>
         </motion.div>
       )}

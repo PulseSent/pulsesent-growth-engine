@@ -22,7 +22,7 @@ const CTABanner = () => {
             Let's talk about your business and find the smartest way to grow — no pressure, no pitch.
           </p>
           <Button size="lg" asChild className="relative overflow-hidden">
-            <a href="#contact">
+            <a href="mailto:ryan.pulsesent@gmail.com">
               <Zap className="mr-2 h-4 w-4" /> Book Your Free Strategy Call
               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]" />
             </a>
