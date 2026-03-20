@@ -48,7 +48,7 @@ const TrustSection = () => {
           transition={{ duration: 0.6 }}
           className="glow-card p-8 md:p-12 mb-20"
         >
-          <div className="grid grid-cols-3 gap-4 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 text-center">
             {stats.map((stat) => (
               <div key={stat.label}>
                 <p className="text-3xl md:text-5xl font-display font-extrabold text-foreground">
