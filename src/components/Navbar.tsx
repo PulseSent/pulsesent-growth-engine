@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Services", href: "#services" },
-  { label: "Contact", href: "mailto:ryan.pulsesent@gmail.com" },
+  { label: "Contact", href: "https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" },
 ];
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" size="sm" asChild className="border-foreground/20 text-foreground hover:bg-foreground/5">
-            <a href="mailto:ryan.pulsesent@gmail.com">Book a Free Call</a>
+            <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer">Book a Free Call</a>
           </Button>
         </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
-            <a href="mailto:ryan.pulsesent@gmail.com" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
+            <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
           </Button>
         </motion.div>
       )}

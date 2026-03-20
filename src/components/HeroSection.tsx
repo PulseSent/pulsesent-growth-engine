@@ -51,7 +51,7 @@ const HeroSection = () => {
             </a>
           </Button>
           <Button size="lg" asChild>
-            <a href="mailto:ryan.pulsesent@gmail.com">
+            <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer">
               <Zap className="mr-2 h-4 w-4" /> Book a Free Call
             </a>
           </Button>

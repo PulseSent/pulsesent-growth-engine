@@ -15,7 +15,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#services" className="hover:text-foreground transition-colors">Services</a>
-            <a href="mailto:ryan.pulsesent@gmail.com" className="hover:text-foreground transition-colors">Contact</a>
+            <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Contact</a>
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
           </div>
 
