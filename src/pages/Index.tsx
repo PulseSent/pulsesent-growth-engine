@@ -1,20 +1,22 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
-import AutomationsSection from "@/components/AutomationsSection";
+import WorkflowSection from "@/components/WorkflowSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import WhoItsForSection from "@/components/WhoItsForSection";
 import TrustSection from "@/components/TrustSection";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background noise-overlay">
+      <CustomCursor />
       <Navbar />
       <HeroSection />
       <ServicesSection />
-      <AutomationsSection />
+      <WorkflowSection />
       <HowItWorksSection />
       <WhoItsForSection />
       <TrustSection />
