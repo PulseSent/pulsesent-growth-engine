@@ -51,7 +51,7 @@ const HeroSection = () => {
             </a>
           </Button>
           <Button size="lg" asChild>
-            <a href="#contact">
+            <a href="mailto:ryan.pulsesent@gmail.com">
               <Zap className="mr-2 h-4 w-4" /> Book a Free Call
             </a>
           </Button>
