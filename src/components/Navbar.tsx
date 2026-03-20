@@ -44,7 +44,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="outline" size="sm" asChild className="border-foreground/20 text-foreground hover:bg-foreground/5">
-            <a href="#contact">Book a Free Call</a>
+            <a href="mailto:ryan.pulsesent@gmail.com">Book a Free Call</a>
           </Button>
         </div>
 
