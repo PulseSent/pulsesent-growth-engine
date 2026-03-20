@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, XCircle } from "lucide-react";
+import { Check, X } from "lucide-react";
 
 const greatFit = [
   "Service-based businesses looking to scale",
@@ -27,8 +27,7 @@ const WhoItsForSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-            Not every business is the same.{" "}
-            <span className="text-gradient-teal">That's the point.</span>
+            Not every business is the same. That's the point.
           </h2>
         </motion.div>
 
@@ -40,13 +39,20 @@ const WhoItsForSection = () => {
             transition={{ duration: 0.5 }}
             className="glow-card p-8"
           >
-            <h3 className="text-lg font-display font-bold text-primary mb-6">You're a great fit if…</h3>
+            <h3 className="text-lg font-display font-bold text-foreground mb-6">You're a great fit if…</h3>
             <ul className="space-y-4">
-              {greatFit.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-foreground">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+              {greatFit.map((item, i) => (
+                <motion.li
+                  key={item}
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.08 }}
+                  className="flex items-start gap-3 text-sm text-foreground/80"
+                >
+                  <Check className="h-4 w-4 text-foreground/50 shrink-0 mt-0.5" />
                   {item}
-                </li>
+                </motion.li>
               ))}
             </ul>
           </motion.div>
@@ -56,18 +62,25 @@ const WhoItsForSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="glow-card p-8 border-secondary/20"
+            className="glow-card p-8"
           >
-            <h3 className="text-lg font-display font-bold text-secondary mb-6">We might not be the right fit yet…</h3>
+            <h3 className="text-lg font-display font-bold text-muted-foreground mb-6">We might not be the right fit yet…</h3>
             <ul className="space-y-4">
-              {notYet.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
-                  <XCircle className="h-5 w-5 text-secondary/60 shrink-0 mt-0.5" />
+              {notYet.map((item, i) => (
+                <motion.li
+                  key={item}
+                  initial={{ opacity: 0, x: 10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: i * 0.08 }}
+                  className="flex items-start gap-3 text-sm text-muted-foreground"
+                >
+                  <X className="h-4 w-4 text-muted-foreground/50 shrink-0 mt-0.5" />
                   {item}
-                </li>
+                </motion.li>
               ))}
             </ul>
-            <p className="mt-6 text-xs text-muted-foreground">
+            <p className="mt-6 text-xs text-muted-foreground/60">
               We believe in honesty. If you're not ready today, that's okay — we'll be here when you are.
             </p>
           </motion.div>
