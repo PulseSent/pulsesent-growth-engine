@@ -1,5 +1,4 @@
-import { Twitter, Linkedin, Instagram } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { Activity, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,8 +6,8 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Pulsesent" className="h-5 w-5 invert" />
-            <span className="font-display font-bold text-foreground text-sm">Pulsesent</span>
+            <Activity className="h-4 w-4 text-foreground/60" />
+            <span className="font-display font-bold text-foreground text-sm">Pulsesent AI</span>
             <span className="text-xs text-muted-foreground ml-2 hidden sm:inline">
               AI systems built to grow with you.
             </span>
@@ -27,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-center text-xs text-muted-foreground/40 mt-8">
-          © {new Date().getFullYear()} Pulsesent. All rights reserved.
+          © {new Date().getFullYear()} Pulsesent AI. All rights reserved.
         </p>
       </div>
     </footer>
