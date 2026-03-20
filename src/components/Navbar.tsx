@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Activity } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -29,15 +30,14 @@ const Navbar = () => {
         scrolled ? "glass border-b border-border shadow-lg" : ""
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4 px-4">
+      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
         <a href="#" className="flex items-center gap-2 group">
-          <Activity className="h-7 w-7 text-primary transition-transform group-hover:scale-110" />
+          <img src={logo} alt="Pulsesent" className="h-8 w-8" />
           <span className="text-xl font-display font-bold text-foreground">
             Pulse<span className="text-primary">sent</span>
           </span>
         </a>
 
-        {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -53,7 +53,6 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden text-foreground"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -62,12 +61,11 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden glass border-b border-border px-4 pb-4"
+          className="md:hidden glass border-b border-border px-6 pb-4"
         >
           {navLinks.map((link) => (
             <a

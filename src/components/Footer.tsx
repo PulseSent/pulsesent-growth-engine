@@ -1,12 +1,13 @@
 import { Activity, Twitter, Linkedin, Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="border-t border-border py-12">
-      <div className="container px-4">
+      <div className="max-w-5xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <Activity className="h-5 w-5 text-primary" />
+            <img src={logo} alt="Pulsesent" className="h-6 w-6" />
             <span className="font-display font-bold text-foreground">
               Pulse<span className="text-primary">sent</span>
             </span>

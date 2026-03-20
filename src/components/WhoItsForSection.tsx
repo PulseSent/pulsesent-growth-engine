@@ -18,7 +18,7 @@ const notYet = [
 const WhoItsForSection = () => {
   return (
     <section id="who-its-for" className="py-24 relative">
-      <div className="container px-4">
+      <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ const WhoItsForSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -40,9 +40,7 @@ const WhoItsForSection = () => {
             transition={{ duration: 0.5 }}
             className="glow-card p-8"
           >
-            <h3 className="text-lg font-display font-bold text-primary mb-6">
-              You're a great fit if…
-            </h3>
+            <h3 className="text-lg font-display font-bold text-primary mb-6">You're a great fit if…</h3>
             <ul className="space-y-4">
               {greatFit.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-foreground">
@@ -60,9 +58,7 @@ const WhoItsForSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="glow-card p-8 border-secondary/20"
           >
-            <h3 className="text-lg font-display font-bold text-secondary mb-6">
-              We might not be the right fit yet…
-            </h3>
+            <h3 className="text-lg font-display font-bold text-secondary mb-6">We might not be the right fit yet…</h3>
             <ul className="space-y-4">
               {notYet.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
