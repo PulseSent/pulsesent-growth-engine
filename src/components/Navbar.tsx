@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -31,20 +30,16 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-5xl mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#" className="flex items-center gap-2 group">
-          <img src={logo} alt="Pulsesent" className="h-7 w-7 invert" />
+        <a href="#" className="flex items-center gap-2">
+          <Activity className="h-5 w-5 text-foreground" />
           <span className="text-lg font-display font-bold text-foreground">
-            Pulsesent
+            Pulsesent AI
           </span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
+            <a key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
               {link.label}
             </a>
           ))}
@@ -59,18 +54,9 @@ const Navbar = () => {
       </div>
 
       {mobileOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden glass-dark border-b border-foreground/10 px-6 pb-4"
-        >
+        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="md:hidden glass-dark border-b border-foreground/10 px-6 pb-4">
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block py-3 text-muted-foreground hover:text-foreground transition-colors"
-            >
+            <a key={link.href} href={link.href} onClick={() => setMobileOpen(false)} className="block py-3 text-muted-foreground hover:text-foreground transition-colors">
               {link.label}
             </a>
           ))}

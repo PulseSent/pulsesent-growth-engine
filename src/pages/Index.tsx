@@ -7,12 +7,10 @@ import WhoItsForSection from "@/components/WhoItsForSection";
 import TrustSection from "@/components/TrustSection";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
-import CustomCursor from "@/components/CustomCursor";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background noise-overlay">
-      <CustomCursor />
       <Navbar />
       <HeroSection />
       <ServicesSection />
