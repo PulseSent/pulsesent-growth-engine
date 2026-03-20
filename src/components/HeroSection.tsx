@@ -4,7 +4,7 @@ import { ArrowRight, Zap, Building2, ShoppingCart, Stethoscope } from "lucide-re
 import ParticleNetwork from "./ParticleNetwork";
 import RadarPulse from "./RadarPulse";
 
-const ease = [0.16, 1, 0.3, 1] as const;
+const ease: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 const words = ["Your", "Business,", "Running", "Smarter", "—", "24/7"];
 
