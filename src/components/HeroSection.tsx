@@ -39,7 +39,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.4, ease }}
           className="max-w-2xl mx-auto text-base md:text-lg text-muted-foreground mb-10"
         >
-          Most law firms lose potential clients due to slow response times and missed responses. We build AI systems that instantly respond, qualify prospects, and help you book more consultations automatically.
+          Built specifically for law firms looking to grow without hiring more staff
         </motion.p>
 
         <motion.div
@@ -89,16 +89,6 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.3, ease }}
-          className="flex flex-col items-center gap-3"
-        >
-          <p className="text-xs text-muted-foreground uppercase tracking-widest px-4 text-center leading-relaxed">
-            Built specifically for law firms looking to grow without hiring more staff
-          </p>
-        </motion.div>
       </div>
     </section>
   );
