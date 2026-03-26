@@ -48,11 +48,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.7, ease }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
         >
-          <Button variant="outline" size="lg" asChild className="border-foreground/20 text-foreground hover:bg-foreground/5">
-            <a href="#demo">
-              <Play className="mr-2 h-4 w-4" /> Watch Demo
-            </a>
-          </Button>
+          
           <Button size="lg" asChild>
             <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer">
               <Zap className="mr-2 h-4 w-4" /> Book a Free Consultation
