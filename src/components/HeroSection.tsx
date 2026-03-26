@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Play } from "lucide-react";
+import { ArrowRight, Zap, Play, Mail, Phone } from "lucide-react";
 import ParticleNetwork from "./ParticleNetwork";
 import RadarPulse from "./RadarPulse";
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.7, ease }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
         >
           <Button variant="outline" size="lg" asChild className="border-foreground/20 text-foreground hover:bg-foreground/5">
             <a href="#demo">
@@ -58,6 +58,20 @@ const HeroSection = () => {
               <Zap className="mr-2 h-4 w-4" /> Book a Free Consultation
             </a>
           </Button>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.9, ease }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-10 text-sm text-muted-foreground"
+        >
+          <a href="mailto:ryan.pulsesent@gmail.com" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+            <Mail className="h-4 w-4" /> ryan.pulsesent@gmail.com
+          </a>
+          <a href="tel:+14025958660" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+            <Phone className="h-4 w-4" /> (402) 595-8660
+          </a>
         </motion.div>
 
         <motion.div
