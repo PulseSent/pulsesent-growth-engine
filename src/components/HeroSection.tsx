@@ -37,8 +37,8 @@ const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.0, ease }}
-          className="max-w-xl mx-auto text-base md:text-lg text-muted-foreground mb-10"
+          transition={{ duration: 0.8, delay: 1.4, ease }}
+          className="max-w-2xl mx-auto text-base md:text-lg text-muted-foreground mb-10"
         >
           Most law firms lose potential clients due to slow response times and missed responses. We build AI systems that instantly respond, qualify prospects, and help you book more consultations automatically.
         </motion.p>
