@@ -46,7 +46,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.3, ease }}
+          transition={{ duration: 0.8, delay: 1.7, ease }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
         >
           <Button variant="outline" size="lg" asChild className="border-foreground/20 text-foreground hover:bg-foreground/5">
