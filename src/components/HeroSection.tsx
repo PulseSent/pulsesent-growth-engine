@@ -79,7 +79,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.9, ease }}
+          transition={{ duration: 0.8, delay: 2.3, ease }}
           className="flex flex-col items-center gap-3"
         >
           <p className="text-xs text-muted-foreground uppercase tracking-widest">
