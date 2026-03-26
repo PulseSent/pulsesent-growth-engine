@@ -80,6 +80,9 @@ const Navbar = () => {
             <a href="tel:+14025958660" className="hover:text-foreground transition-colors flex items-center gap-1.5">
               <Phone className="h-3.5 w-3.5" /> (402) 595-8660
             </a>
+            <a href="https://www.linkedin.com/in/ryan-swanson-87963a300/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+              <Linkedin className="h-3.5 w-3.5" /> LinkedIn
+            </a>
           </div>
         </motion.div>
       )}
