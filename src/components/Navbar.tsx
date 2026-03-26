@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Activity, Mail, Phone, Linkedin } from "lucide-react";
+import { Menu, X, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -27,25 +27,13 @@ const Navbar = () => {
         scrolled ? "glass-dark border-b border-foreground/10" : ""
       }`}
     >
-      <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <div className="max-w-5xl mx-auto flex items-center justify-between py-4 px-6">
         <a href="#" className="flex items-center gap-2">
           <Activity className="h-5 w-5 text-foreground" />
           <span className="text-lg font-display font-bold text-foreground">
             Pulsesent AI
           </span>
         </a>
-
-        <div className="hidden lg:flex items-center gap-4 text-xs text-muted-foreground">
-          <a href="mailto:ryan.pulsesent@gmail.com" className="hover:text-foreground transition-colors flex items-center gap-1">
-            <Mail className="h-3.5 w-3.5" /> ryan.pulsesent@gmail.com
-          </a>
-          <a href="tel:+14025958660" className="hover:text-foreground transition-colors flex items-center gap-1">
-            <Phone className="h-3.5 w-3.5" /> (402) 595-8660
-          </a>
-          <a href="https://www.linkedin.com/in/ryan-swanson-87963a300/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
-            <Linkedin className="h-3.5 w-3.5" />
-          </a>
-        </div>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -70,20 +58,9 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-           <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
+          <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
             <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
           </Button>
-          <div className="flex flex-col gap-2 mt-3 text-xs text-muted-foreground">
-            <a href="mailto:ryan.pulsesent@gmail.com" className="hover:text-foreground transition-colors flex items-center gap-1.5">
-              <Mail className="h-3.5 w-3.5" /> ryan.pulsesent@gmail.com
-            </a>
-            <a href="tel:+14025958660" className="hover:text-foreground transition-colors flex items-center gap-1.5">
-              <Phone className="h-3.5 w-3.5" /> (402) 595-8660
-            </a>
-            <a href="https://www.linkedin.com/in/ryan-swanson-87963a300/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-1.5">
-              <Linkedin className="h-3.5 w-3.5" /> LinkedIn
-            </a>
-          </div>
         </motion.div>
       )}
     </motion.nav>
