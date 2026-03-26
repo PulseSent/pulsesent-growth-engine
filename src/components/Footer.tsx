@@ -1,4 +1,4 @@
-import { Activity, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Activity, Twitter, Linkedin, Instagram, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,10 +13,13 @@ const Footer = () => {
             </span>
           </div>
 
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#services" className="hover:text-foreground transition-colors">Services</a>
-            <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Contact</a>
-            <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-sm text-muted-foreground">
+            <a href="mailto:ryan.pulsesent@gmail.com" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+              <Mail className="h-3.5 w-3.5" /> ryan.pulsesent@gmail.com
+            </a>
+            <a href="tel:+14025958660" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+              <Phone className="h-3.5 w-3.5" /> (402) 595-8660
+            </a>
           </div>
 
           <div className="flex items-center gap-4 text-muted-foreground">
