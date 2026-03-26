@@ -67,9 +67,17 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
+           <Button variant="outline" className="w-full mt-2 border-foreground/20 text-foreground" asChild>
             <a href="https://calendly.com/ryan-pulsesent/pulsesent-ai-strategy-call" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Book a Free Call</a>
           </Button>
+          <div className="flex flex-col gap-2 mt-3 text-xs text-muted-foreground">
+            <a href="mailto:ryan.pulsesent@gmail.com" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+              <Mail className="h-3.5 w-3.5" /> ryan.pulsesent@gmail.com
+            </a>
+            <a href="tel:+14025958660" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+              <Phone className="h-3.5 w-3.5" /> (402) 595-8660
+            </a>
+          </div>
         </motion.div>
       )}
     </motion.nav>
