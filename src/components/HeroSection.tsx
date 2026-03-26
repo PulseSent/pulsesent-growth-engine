@@ -64,7 +64,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 2.6, ease }}
+          transition={{ duration: 0.8, delay: 2.0, ease }}
           className="mb-10 mx-auto max-w-2xl aspect-video rounded-lg border border-foreground/10 bg-foreground/5 flex items-center justify-center cursor-pointer hover:bg-foreground/10 transition-colors"
           id="demo"
         >
