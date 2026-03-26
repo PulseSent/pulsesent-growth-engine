@@ -20,7 +20,7 @@ const HeroSection = () => {
       <ParticleNetwork />
 
       <div className="max-w-5xl mx-auto relative z-10 px-6 pt-24 pb-16 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-extrabold leading-[1.1] tracking-tight mb-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold leading-[1.1] tracking-tight mb-8">
           {phrases.map((phrase, i) => (
             <motion.span
               key={i}
