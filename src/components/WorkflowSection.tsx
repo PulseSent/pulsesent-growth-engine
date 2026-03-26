@@ -43,8 +43,18 @@ const WorkflowSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="glow-card p-6 md:p-8 space-y-4"
+          className="glow-card p-6 md:p-8 space-y-4 relative"
         >
+          {/* Overlay label */}
+          <div className="absolute top-4 right-4 z-10 flex items-center gap-1.5 rounded-full border border-foreground/15 bg-background/80 backdrop-blur-sm px-3 py-1">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
+            </span>
+            <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
+              AI handling client inquiries in real time
+            </span>
+          </div>
           {messages.map((msg, i) => (
             <motion.div
               key={i}
