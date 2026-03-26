@@ -7,9 +7,8 @@ import RadarPulse from "./RadarPulse";
 const ease: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 const phrases = [
-  "We help law firms",
-  "capture and convert",
-  "more client inquiries",
+  "We help law firms capture",
+  "and convert more clients",
   "using AI",
 ];
 
