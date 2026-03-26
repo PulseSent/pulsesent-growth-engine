@@ -6,7 +6,12 @@ import RadarPulse from "./RadarPulse";
 
 const ease: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
-const words = ["We", "help", "law", "firms", "capture", "and", "convert", "more", "client", "inquiries", "using", "AI"];
+const phrases = [
+  "We help law firms",
+  "capture and convert",
+  "more client inquiries",
+  "using AI",
+];
 
 const HeroSection = () => {
   return (
@@ -14,17 +19,17 @@ const HeroSection = () => {
       <RadarPulse />
       <ParticleNetwork />
 
-      <div className="max-w-4xl mx-auto relative z-10 px-6 pt-24 pb-16 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold leading-tight tracking-tight mb-6 flex flex-wrap justify-center gap-x-2 sm:gap-x-3 gap-y-1">
-          {words.map((word, i) => (
+      <div className="max-w-5xl mx-auto relative z-10 px-6 pt-24 pb-16 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-extrabold leading-[1.1] tracking-tight mb-8">
+          {phrases.map((phrase, i) => (
             <motion.span
               key={i}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.15 * i, ease }}
-              className="inline-block"
+              transition={{ duration: 0.6, delay: 0.3 * i, ease }}
+              className="block"
             >
-              {word}
+              {phrase}
             </motion.span>
           ))}
         </h1>
