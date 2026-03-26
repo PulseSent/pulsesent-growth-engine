@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Zap } from "lucide-react";
+import { Zap, Mail, Phone } from "lucide-react";
+import RadarPulse from "./RadarPulse";
 import RadarPulse from "./RadarPulse";
 
 const CTABanner = () => {
@@ -27,7 +28,14 @@ const CTABanner = () => {
               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent -translate-x-full animate-[shimmer_2s_ease-in-out_infinite]" />
             </a>
           </Button>
-        </motion.div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 text-sm text-muted-foreground">
+            <a href="mailto:ryan.pulsesent@gmail.com" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+              <Mail className="h-4 w-4" /> ryan.pulsesent@gmail.com
+            </a>
+            <a href="tel:+14025958660" className="hover:text-foreground transition-colors flex items-center gap-1.5">
+              <Phone className="h-4 w-4" /> (402) 595-8660
+            </a>
+          </div>
       </div>
     </section>
   );

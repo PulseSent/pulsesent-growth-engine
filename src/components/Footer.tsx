@@ -1,4 +1,4 @@
-import { Activity, Twitter, Linkedin, Instagram, Mail, Phone } from "lucide-react";
+import { Activity, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -23,9 +23,7 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-4 text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors"><Twitter className="h-4 w-4" /></a>
-            <a href="#" className="hover:text-foreground transition-colors"><Linkedin className="h-4 w-4" /></a>
-            <a href="#" className="hover:text-foreground transition-colors"><Instagram className="h-4 w-4" /></a>
+            <a href="https://www.linkedin.com/in/ryan-swanson-87963a300/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors"><Linkedin className="h-4 w-4" /></a>
           </div>
         </div>
         <p className="text-center text-xs text-muted-foreground/40 mt-8">
