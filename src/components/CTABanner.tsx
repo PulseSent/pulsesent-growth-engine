@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Zap, Mail, Phone } from "lucide-react";
 import RadarPulse from "./RadarPulse";
-import RadarPulse from "./RadarPulse";
 
 const CTABanner = () => {
   return (
