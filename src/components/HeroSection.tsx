@@ -81,7 +81,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 2.3, ease }}
           className="flex flex-col items-center gap-3"
         >
-          <p className="text-xs text-muted-foreground uppercase tracking-widest">
+          <p className="text-xs text-muted-foreground uppercase tracking-widest px-4 text-center leading-relaxed">
             Built specifically for law firms looking to grow without hiring more staff
           </p>
         </motion.div>
