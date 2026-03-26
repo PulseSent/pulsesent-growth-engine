@@ -36,6 +36,7 @@ const CTABanner = () => {
               <Phone className="h-4 w-4" /> (402) 595-8660
             </a>
           </div>
+        </motion.div>
       </div>
     </section>
   );
