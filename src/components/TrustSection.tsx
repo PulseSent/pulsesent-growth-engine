@@ -83,6 +83,7 @@ const TrustSection = () => {
           <p className="text-lg md:text-xl text-foreground/80 italic leading-relaxed">
             "I was struggling to design a website I truly loved, but working with Ryan from Pulsesent made the process simple and stress-free. The results exceeded my expectations, and I couldn't be happier."
           </p>
+          <p className="text-sm font-semibold text-muted-foreground mt-4">— Kaz Long, Attorney</p>
         </motion.div>
       </div>
     </section>
