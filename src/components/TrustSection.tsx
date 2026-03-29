@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Star } from "lucide-react";
+import clientPhoto from "@/assets/client-photo.jpg";
 
 const testimonials = [
   { name: "Sarah Mitchell", role: "Founder, GrowthLab Agency", quote: "Pulsesent transformed our lead generation. We went from manually chasing prospects to having a fully automated pipeline that books calls for us." },
