@@ -84,22 +84,6 @@ const TrustSection = () => {
             "I was struggling to design a website I truly loved, but working with Ryan from Pulsesent made the process simple and stress-free. The results exceeded my expectations, and I couldn't be happier."
           </p>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="glow-card p-8 md:p-12 text-center max-w-3xl mx-auto"
-        >
-          <div className="flex justify-center gap-1 mb-6">
-            {[...Array(5)].map((_, j) => (
-              <Star key={j} className="h-4 w-4 fill-foreground/30 text-foreground/30" />
-            ))}
-          </div>
-          <p className="text-lg md:text-xl text-foreground/80 italic leading-relaxed mb-6">
-            "I was struggling to design a website I truly loved, but working with Ryan from Pulsesent made the process simple and stress-free. The results exceeded my expectations, and I couldn't be happier."
-          </p>
-        </motion.div>
       </div>
     </section>
   );
