@@ -61,6 +61,27 @@ const TrustSection = () => {
           </div>
         </motion.div>
 
+        {/* Client Spotlight */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="glow-card p-8 md:p-12 mb-20 flex flex-col md:flex-row items-center gap-8"
+        >
+          <img
+            src={clientPhoto}
+            alt="Our satisfied clients"
+            className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-lg"
+          />
+          <div className="text-center md:text-left">
+            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-3">Real People. Real Results.</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              We partner closely with every client to deliver AI automation systems that actually work. Our hands-on approach means you're never left guessing — just growing.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Testimonials */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
