@@ -61,38 +61,29 @@ const TrustSection = () => {
           </div>
         </motion.div>
 
-        {/* Client Spotlight */}
+        {/* Client Testimonial */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="glow-card p-8 md:p-12 mb-20 flex flex-col md:flex-row items-center gap-8"
+          className="glow-card p-8 md:p-12 text-center max-w-3xl mx-auto"
         >
           <img
             src={clientPhoto}
-            alt="Our satisfied clients"
-            className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-lg"
+            alt="Our satisfied client"
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover shadow-lg mx-auto mb-6"
           />
-          <div className="text-center md:text-left">
-            <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-3">Real People. Real Results.</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              We partner closely with every client to deliver AI automation systems that actually work. Our hands-on approach means you're never left guessing — just growing.
-            </p>
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">What Our Clients Say</h2>
+          <div className="flex justify-center gap-1 mb-6">
+            {[...Array(5)].map((_, j) => (
+              <Star key={j} className="h-5 w-5 fill-foreground/30 text-foreground/30" />
+            ))}
           </div>
+          <p className="text-lg md:text-xl text-foreground/80 italic leading-relaxed">
+            "I was struggling to design a website I truly loved, but working with Ryan from Pulsesent made the process simple and stress-free. The results exceeded my expectations, and I couldn't be happier."
+          </p>
         </motion.div>
-
-        {/* Testimonial */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">What Our Clients Say</h2>
-        </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
