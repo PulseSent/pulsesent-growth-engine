@@ -109,4 +109,9 @@ const TrustSection = () => {
             "I was struggling to design a website I truly loved, but working with Ryan from Pulsesent made the process simple and stress-free. The results exceeded my expectations, and I couldn't be happier."
           </p>
         </motion.div>
+      </div>
+    </section>
+  );
+};
+
 export default TrustSection;
